@@ -17,26 +17,30 @@ export const decrement = () => {
     }
 }
 
-export const add = () => {
+export const add = (value) => {
     return {
-        type: ADD
+        type: ADD,
+        value: value
     }
 }
 
-export const subtract = () => {
+export const subtract = (val) => {
     return {
-        type: SUBTRACT
+        type: SUBTRACT,
+        value: val
     }
 }
 
-export const storeResult = () => {
+export const storeResult = (res) => {
     return {
-        type: STORE_RESULT
+        type: STORE_RESULT,
+        result: res
     }
 }
 
-export const deleteResult = () => {
+export const deleteResult = (res) => {
     return {
-        type: DELETE_RESULT
+        type: DELETE_RESULT,
+        resultElId: res
     }
 }
